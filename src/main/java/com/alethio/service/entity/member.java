@@ -1,4 +1,4 @@
-package com.alethio.service.domain;
+package com.alethio.service.entity;
 
 import lombok.Data;
 
