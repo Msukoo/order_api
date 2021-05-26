@@ -30,7 +30,7 @@ order_api
 
 ## :pushpin: Issues
 ```
-1. item table 매핑 id값 컨트롤 실패 (clothes테이블과 food테이블 pk값 item에서 하나로 연동)
+1. item table 매핑 id값 컨트롤 실패오류 (clothes테이블과 food테이블 pk값 item에서 하나로 연동)
 2. 재고수량 차감 확인
 3. 주문 정보 저장 확인
 
