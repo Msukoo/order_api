@@ -1,21 +1,19 @@
 package com.alethio.service.repository;
 
-import com.alethio.service.entity.Order;
+import com.alethio.service.entity.items.Category;
+import com.alethio.service.entity.items.CategoryName;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Repository;
-import org.springframework.transaction.annotation.Transactional;
 
 import javax.persistence.EntityManager;
 
 @Repository
 @RequiredArgsConstructor
-public class OrderRepository {
+public class CategoryRepository {
 
     private final EntityManager em;
 
-    @Transactional
-    public void save(Order order) {
-        em.persist(order);
+    public Category findName(CategoryName name) {
+        return em.find(Category.class, name);
     }
-
 }

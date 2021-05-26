@@ -7,7 +7,6 @@ import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Component;
 
 import javax.sql.DataSource;
-import java.sql.Connection;
 
 @Component
 public class H2Runner implements ApplicationRunner {
@@ -20,13 +19,10 @@ public class H2Runner implements ApplicationRunner {
     @Override
     public void run(ApplicationArguments args) throws Exception {
 
-        try (Connection connection = dataSource.getConnection()) {
-            System.out.println(connection);
-            String URL = connection.getMetaData().getURL();
-            System.out.println(URL);
-            String User = connection.getMetaData().getUserName();
-            System.out.println(User);
+//        final List<Item> items = Arrays.asList(
+//                new Item())
+//
+//                ItemRepository.save(items);
 
-        }
     }
 }

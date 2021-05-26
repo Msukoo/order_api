@@ -1,25 +1,21 @@
 package com.alethio.service.entity;
 
 import lombok.Getter;
+import lombok.Setter;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 
-@Entity
+@Setter
 @Getter
-public class Customer {
-    @Id
-    @GeneratedValue
-    @Column(name = "member_id")
-    Long id;
+public class ContactInfo {
 
-    String email;
+    private String contactEmail;
 
-    String name;
+    private String contactName;
 
-    String mobile;
-
+    private String mobile;
 
 }
